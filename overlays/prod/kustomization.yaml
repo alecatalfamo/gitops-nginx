@@ -1,0 +1,15 @@
+resources:
+  - ../../base
+
+namePrefix: prod-
+commonLabels:
+  environment: prod
+
+patches:
+  - target:
+      kind: Deployment
+      name: nginx
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 3
