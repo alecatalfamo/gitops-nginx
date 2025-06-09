@@ -1,9 +1,12 @@
 resources:
   - ../../base
+  - namespace.yaml
 
-namePrefix: prod-
-commonLabels:
-  environment: prod
+namespace: prod
+
+# namePrefix: prod-
+# commonLabels:
+#   environment: prod
 
 patches:
   - target:
