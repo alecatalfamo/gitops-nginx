@@ -1,6 +1,6 @@
 resources:
- - https://github.com/alecatalfamo/gitops-nginx.git//base
- - namespace.yaml
+  - https://github.com/alecatalfamo/gitops-nginx.git//base
+  - namespace.yaml
 
 namespace: dev
 
