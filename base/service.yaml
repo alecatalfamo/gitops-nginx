@@ -10,3 +10,19 @@ spec:
       port: 80
       targetPort: 80
   type: ClusterIP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-nodeport
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080  # opzionale: puoi ometterlo per avere un valore random tra 30000-32767
+  type: NodePort
