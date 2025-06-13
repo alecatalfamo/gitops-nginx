@@ -1,8 +1,8 @@
 resources:
   - base
-  - namespace.yaml
+#  - namespace.yaml
 
-namespace: dev
+namespace: acatalfamo
 
 # namePrefix: dev-
 # commonLabels:
